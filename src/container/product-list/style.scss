@@ -1,0 +1,26 @@
+@use'../../lib/service.scss' as s;
+@use "../../component/product-сard/style.scss" as product-сard;
+
+body {
+  padding: s.space(4);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(10)
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: s.space(5);
+  color: s.color('primary');
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: s.space(4);
+
+}

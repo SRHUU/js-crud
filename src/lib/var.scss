@@ -1,5 +1,9 @@
 $colorMap: (
   light: #ddd,
+  primary: #006fdd,
+  whiteLight: #fff,
+  labelcolor:#504a4ad0,
+  dangeres:#ff0000,
 );
 
 @function color($key) {

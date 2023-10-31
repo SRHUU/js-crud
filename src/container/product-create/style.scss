@@ -1,0 +1,83 @@
+@use'../../lib/service.scss' as s;
+
+body {
+  padding: s.space(4);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(10)
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: s.space(5);
+  color: s.color('primary');
+}
+
+.form {
+  display: flex;
+  padding: s.space(4);
+  flex-direction: column;
+  gap: s.space(8);
+  border: 1px solid s.color('light');
+  border-radius: 20px;
+  padding: s.space(4);
+
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.15);
+
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: s.space(1);
+
+  }
+
+  &__content {
+    display: grid;
+    gap: s.space(6)
+  }
+
+  &__line {
+    display: grid;
+    gap: s.space(6);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(2);
+
+  }
+
+  &__label {
+    font-size: 16px;
+    color: s.color('labelcolor');
+  }
+
+  &__comment {
+    font-size: 14px;
+    color: s.color('labelcolor');
+  }
+
+  &__input {
+    border: 1px solid s.color('light');
+    padding: s.space(2);
+    border-radius: s.space(2);
+  }
+
+  &__hight {
+    padding: s.space(6);
+  }
+
+  &__button {
+    border: 1px solid s.color('light');
+    padding: s.space(2);
+    border-radius: 6px;
+    background-color: s.color('primary');
+    color: s.color('whiteLight');
+  }
+}
