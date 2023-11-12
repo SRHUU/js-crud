@@ -1,0 +1,77 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+<main class="main">
+  {{#with data}}
+
+  <div class="form-card">
+
+    {{> purchase-heading title="Інформація про замовлення"}}
+
+    <div class="grid-1">
+
+      {{> field label="ID:" name="id" value=purchase.id}}
+
+    </div>
+
+    {{> divider}}
+
+    <div class="grid-2">
+      {{> field label="Ім'я:" name="firstname" value=purchase.firstname}}
+
+      {{> field label="Прізвище:" name="lastname" value=purchase.lastname}}
+
+      {{> field label="Телефон:" name="phone" value=purchase.phone}}
+
+      {{> field label="Електронна пошта:" name="email" value=purchase.email}}
+    </div>
+
+
+    {{> divider}}
+
+    <div class="grid-1">
+
+      {{> field label="Назва товару:" name="title" value=purchase.product.title}}
+
+      {{> field label="Коментар:" name="comment" value=purchase.comment}}
+
+    </div>
+
+    {{> divider}}
+
+    <div class="grid-2">
+
+      {{> field label="Вартість товару:" name="productPrice" value=purchase.totalPrice}}
+
+      {{> field label="Вартість доставки:" name="deliveryPrice" value=purchase.deliveryPrice}}
+
+      {{> field label="Сума до сплати:" name="totalPrice" value=purchase.productPrice}}
+
+      {{> field label="Нараховані бонуси:" name="bonus" value=bonus}}
+
+    </div>
+
+    {{> divider}}
+
+    <a href="/purchase-edit?id={{purchase.id}}">
+
+      {{> button text="Змінити дані"}}
+
+    </a>
+
+  </div>
+
+  {{/with}}
+
+</main>
+
+
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+  Адже наш layout/default.hbs має вже структуру HTML
+  }}

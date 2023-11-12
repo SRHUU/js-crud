@@ -1,0 +1,47 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  gap: 20px;
+}
+
+.list__link {
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  text-decoration: none;
+}
+.list__link:hover {
+  opacity: 0.7;
+}
+
+.list__row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  gap: 16px;
+}
+
+.list__column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.list__column-id {
+  padding-top: 16px;
+}
+
+.list__column--gray {
+  color: text;
+}
+
+.list__column--gray {
+  color: rgba(80, 74, 74, 0.8156862745);
+}
+
+.list__column--bold {
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */

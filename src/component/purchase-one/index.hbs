@@ -1,0 +1,21 @@
+<div class="list">
+	<div class="list__row">
+		<div class="list__column">
+			<p class="list__column-id list__column--gray">ID:{{id}}</p>
+		</div>
+		<a href="/purchase-info?id={{id}}" class="list__link">
+			<div class="list__column">
+				<p class="list__column--gray">Товари:</p>
+				<p class="list__column--black">{{title}}</p>
+			</div>
+		</a>
+		<div class="list__column">
+			<p class="list__column--gray">Сума замовлення:</p>
+			<p class="list__column--black list__column--bold">{{totalPrice}} ₴</p>
+		</div>
+		<div class="list__column">
+			<p class="list__column--gray">Нараховані бонуси:</p>
+			<p class="list__column--black list__column--bold">{{bonus}} ₴</p>
+		</div>
+	</div>
+</div>
