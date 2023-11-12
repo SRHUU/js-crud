@@ -1,0 +1,20 @@
+@use'../../lib/service.scss' as s;
+
+@use "../../component/purchase-heading/style.scss" as purchaseHeading;
+@use "../../component/purchase-one/style.scss" as purchase-one;
+@use "../../component/divider/style.scss" as divider;
+
+body {
+  padding: s.space(4);
+}
+
+.grid {
+  padding-top: s.space(4);
+  display: grid;
+  gap: s.space(4);
+
+}
+
+.divider {
+  padding-top: s.space(2);
+}

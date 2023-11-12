@@ -1,0 +1,48 @@
+@use'../../lib/service.scss' as s;
+
+.list {
+    display: flex;
+    flex-direction: column;
+    margin-top: s.space(4);
+    gap: s.space(5);
+}
+
+.list__link {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    text-decoration: none;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.list__row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: s.space(4);
+}
+
+.list__column {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(3);
+    font-size: 16px;
+    line-height: 150%
+}
+
+.list__column-id {
+    padding-top: s.space(4);
+}
+
+.list__column--gray {
+    color: s.color(gray) text
+}
+
+.list__column--gray {
+    color: s.color('labelcolor');
+}
+
+.list__column--bold {
+    font-weight: bold;
+}
