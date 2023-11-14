@@ -1,0 +1,14 @@
+@use'../../lib/service.scss' as s;
+
+@use'../../lib/spotify.scss' as spotify;
+
+.card__playlist {
+    display: flex;
+    padding: s.space(4);
+    flex-direction: column;
+    gap: s.space(8);
+    border: 1px solid s.color(labelgray);
+    border-radius: 10px;
+    padding: s.space(4);
+    background-color: s.color(labelgray);
+}
