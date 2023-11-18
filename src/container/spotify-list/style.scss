@@ -1,0 +1,33 @@
+@use'../../lib/service.scss' as s;
+
+@use'../../lib/spotify.scss' as spotify;
+@use "../../component/spotify-card/style.scss" as spotifyCard;
+
+.main__content {
+    width: 100%;
+    max-width: 732px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.title__firstpage {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.images {
+    display: flex;
+    gap: s.space(6)
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: s.space(10)
+}

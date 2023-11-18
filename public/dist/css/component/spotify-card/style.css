@@ -1,0 +1,24 @@
+.spotify-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding-top: 28px;
+}
+
+.spotify-card__img {
+  max-height: 345px;
+  width: 345px;
+}
+
+.spotify-card__name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.spotify-card__amount {
+  font-size: 16px;
+  color: #BDBDBD;
+}
+
+/*# sourceMappingURL=style.css.map */
